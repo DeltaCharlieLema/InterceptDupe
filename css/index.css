@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    --leftpadding: min(17.5rem, 5%);
+}
+body{
+    height: 200vh;
+    color: white;
+    font: small-caps bold 24px/1 sans-serif;
+}
+.nav-top{
+    top: 1.5rem;
+    left: 2rem;
+    position: absolute;
+    /*border: solid purple;*/
+    margin-left: 2rem;
+}
+svg{
+    fill: white;
+}
+.top-story{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 48%), url("/img/GettyImages-2066753624-e1737755548796.jpg")  ; ;
+    background-size: cover;
+    /*border: solid 2px purple;*/
+    height: 500px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    font-size: 2rem;
+}
+.top-text{
+    width: 50%;
+    padding-left: var(--leftpadding);
+    /*margin-left: 10%;*/
+    margin-bottom: 1%;
+    /*background-position-y: bottom;*/
+}
+.byline{
+    font-size: 1rem;
+    margin-left: 1%;
+    color: #8280ff;
+}
+.center-nav{
+    display: flex;
+    /*justify-content: start;*/
+    justify-content: center;
+}
+.list{
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+    justify-content: space-between;
+    /*margin-left: var(--leftpadding);*/
+    margin-top: 0;
+    padding: 0;
+    a{
+        margin: 0;
+    }
+    flex-shrink: 1;
+
+}
+.list-contact{
+    margin-left: 5rem;
+    gap: 0;
+}
+
+
+.list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding-top: 2rem;
+    white-space: nowrap;
+}
+.support-us{
+    background-color: #6653ff;
+    height: 5rem;
+    width: 14rem;
+
+    margin: 0;
+    /*padding: 0;*/
+    padding-left: 1rem;
+}
+.about{
+    padding: 0 2rem;
+    background-color: #f2f2f2;
+}
+.support-us{
+    .support-text{
+        color: white;
+    }
+}
+li{
+    display: flex;
+}
+.main-content {
+    display: grid;
+    grid-template-areas:
+            "top top top top"
+            "main main main side";
+
+    color: black;
+    margin-left: var(--leftpadding);
+    margin-right: var(--leftpadding);
+}
+
+.tp-head {
+    grid-area: top;
+}
+.article{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: side;
+}
