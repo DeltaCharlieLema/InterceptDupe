@@ -15,6 +15,9 @@ body{
     /*border: solid purple;*/
     margin-left: 2rem;
 }
+.headline{
+    font-size: clamp(1.2rem , 4vw, 6rem);
+}
 svg{
     fill: white;
 }
@@ -30,7 +33,7 @@ svg{
     font-size: 2rem;
 }
 .top-text{
-    width: 50%;
+    width: max(4vw, 800px);
     padding-left: var(--leftpadding);
     /*margin-left: 10%;*/
     margin-bottom: 1%;
@@ -52,6 +55,7 @@ svg{
     gap: 2rem;
     justify-content: space-between;
     /*margin-left: var(--leftpadding);*/
+    flex-wrap: wrap;
     margin-top: 0;
     padding: 0;
     a{
